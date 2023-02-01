@@ -1,7 +1,7 @@
 function ImageList({ images }) {
-  const imagesHTML = images.map((image) => (
-    <div>
-      <img src={image.src}></img>
+  const imagesHTML = images.map((image, index) => ( //use nanoid instead of index
+    <div key={index}>
+      <img src={image.src} alt={image.caption}></img>
       <p>{image.caption}</p>
     </div>
   )

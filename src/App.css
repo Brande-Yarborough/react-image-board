@@ -37,6 +37,21 @@
   }
 }
 
+img {
+  width: 1024px;
+  height: 768px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+p {
+  text-align: center;
+}
+button {
+  margin-right: 15px;
+}
+
 @media (max-width: 768px) {
   [class*="col-"] {
     width: 100%;

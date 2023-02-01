@@ -29,23 +29,25 @@ function ImageForm({ addImage }) {
     // <div className="dropdown-menu">
     <form onSubmit={handleSubmit} className="px-4 py-3">
       <div className="mb-3">
-        <label htmlFor="exampleDropdownFormUrl"></label>
+        <label htmlFor="exampleDropDownFormUrl"></label>
         <input
+          className="form-control"
           onChange={handleUrlChange}
           value={url}
           type="url"
-          className="form-control"
+          // className="url"
           id="exampleDropdownFormUrl"
           placeholder="Image URL"
         />
       </div>
       <div className="mb-3">
-        <label htmlFor="exampleDropdownFormCaption"></label>
+        <label htmlFor="exampleDropDownFormCaption"></label>
         <input
+          className="form-control"
           onChange={handleCaptionChange}
           value={caption}
           type="text"
-          className="form-control"
+          // className="caption"
           id="exampleDropdownFormCaption"
           placeholder="Image Caption"
         />
