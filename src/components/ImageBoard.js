@@ -3,15 +3,15 @@ import ImageForm from "./ImageForm";
 import ImageList from "./ImageList";
 
 const INITIAL_IMAGES = [
-  {
+  { id:1,
     src: "https://www.globeguide.ca/wp-content/uploads/2020/07/Washington-Olymipc-national-park-beach.jpg",
     caption: "Olympic National Park Beach, Washington",
   },
-  {
+  { id: 2,
     src: "https://www.doi.gov/sites/doi.gov/files/styles/social_media_1200x627/public/blog-post/thumbnail-images/glaciernpshanlin.jpg?itok=BlwMSQH5",
     caption: "Glacier National Park, Montana",
   },
-  {
+  { id: 3,
     src: "https://media.cntraveler.com/photos/56c4b2bc5464a8041fd7b883/16:9/w_1280,c_limit/more-than-just-parks-cr.jpg",
     caption: "Zion National Park, Utah",
   },

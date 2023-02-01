@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Form } from "react-bootstrap";
+import { nanoid } from "nanoid";
 
 function ImageForm({ addImage }) {
   const [url, setUrl] = useState("");
@@ -7,6 +8,12 @@ function ImageForm({ addImage }) {
 
   const handleSubmit = (event) => {
     event.preventDefault(); //stops submit button from refreshing page when not wanted
+
+    const image = {
+      id: nanoid(),
+      image,
+    };
+
     addImage(url, caption);
     setUrl(""); //to empty out value after you have set it to clear it out
     setCaption("");
